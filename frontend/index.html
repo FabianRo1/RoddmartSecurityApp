@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Roddmart Security App - Alarma de Pánico</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <h1>RODDMART SECURITY APP</h1>
+    <p>Sistema Inteligente de Alarma de Pánico</p>
+</header>
+
+<main>
+
+    <section class="panel">
+        <h2>Activar Alarma de Emergencia</h2>
+        <p>Presiona el botón si te encuentras en una situación de riesgo.</p>
+
+        <button id="btnAlarma" class="btn-alarma">
+            🚨 ACTIVAR ALARMA
+        </button>
+
+        <div id="mensaje" class="oculto">
+            <h3>🚨 ALERTA ENVIADA ✅</h3>
+            <p>La notificación fue enviada al equipo de seguridad.</p>
+        </div>
+    </section>
+
+    <section class="datos">
+        <h2>Registro del Incidente</h2>
+
+        <form id="formIncidente">
+            <label>Nombre del local o persona:</label>
+            <input type="text" required>
+
+            <label>Tipo de emergencia:</label>
+            <select required>
+                <option>Robo</option>
+                <option>Violencia</option>
+                <option>Emergencia médica</option>
+                <option>Otro</option>
+            </select>
+
+            <label>Descripción breve:</label>
+            <textarea rows="4" required></textarea>
+
+            <button type="submit" class="btn-enviar">
+                Registrar incidente
+            </button>
+        </form>
+
+        <p id="confirmacion" class="oculto">
+            ✅ Incidente registrado con éxito
+        </p>
+    </section>
+
+</main>
+
+<footer>
+    <p>Proyecto desarrollado por Roddmart Security | 2025</p>
+</footer>
+
+<script src="js/app.js"></script>
+</body>
+</html>
